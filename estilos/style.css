@@ -7,3 +7,8 @@
   --destaque-inverso
   --fundo-card
 */
+
+body {
+    background-color: azure;
+    font-size: 2em;
+}
