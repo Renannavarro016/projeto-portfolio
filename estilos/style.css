@@ -82,6 +82,12 @@ section#ficha img.foto {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  transition: all 0.7s;
+}
+
+section#ficha img.foto:hover {
+  transform: translateY(-1.8px);
+  cursor: pointer;
 }
 
 section#ficha h1 {
@@ -182,7 +188,13 @@ article h2 {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
-  transition: background-color 0.6s ;
+  transition: background-color 0.8s, transform 0.7s;
+}
+
+#skill-container .progresso:hover {
+  background-color: var(--destaque);
+  transform: translateX(2px);
+  cursor: pointer;
 }
 
 #formacao-container {
@@ -208,12 +220,12 @@ article h2 {
 #formacao-container .ano {
   font-size: 0.8em;
   font-weight: bold;
-  color: var(--texto);
+  color: var(--destaque-inverso);
 }
 
 #formacao-container .instituicao {
   font-weight: bold;
-  color: var(--destaque-inverso);
+  color: var(--texto);
   font-size: 1.1em;
 }
 
