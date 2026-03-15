@@ -82,12 +82,6 @@ section#ficha img.foto {
   display: block;
   margin: auto;
   margin-bottom: 20px;
-  transition: all 0.7s;
-}
-
-section#ficha img.foto:hover {
-  transform: translateY(-1.8px);
-  cursor: pointer;
 }
 
 section#ficha h1 {
