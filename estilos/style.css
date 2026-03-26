@@ -335,12 +335,13 @@ footer a:hover {
   }
 
   #projeto-container .projeto-info {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   #projeto-container .foto {
     aspect-ratio: 1/1;
-    max-height: 250px;
+    max-height: 270px;
+    max-width: 500px;
   }
 }
 
