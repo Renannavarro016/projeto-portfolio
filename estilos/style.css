@@ -35,7 +35,7 @@ body {
 header {
   background-color: var(--destaque);
   color: var(--texto);
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: flex-end;
   align-content: center;
@@ -50,7 +50,7 @@ nav#menu ul {
   gap: 10px;
 }
 
-nav#menu a {
+nav#menu ul li a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600;
@@ -59,7 +59,7 @@ nav#menu a {
   transition: all 0.5s;
 }
 
-nav#menu a:hover {
+nav#menu ul li a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.11);
@@ -101,7 +101,7 @@ section#ficha img.foto {
 }
 
 section#ficha img.foto:hover {
-  transform: translateY(-1.6px);
+  transform: translateY(-3px);
 }
 
 section#ficha h1 {
@@ -220,6 +220,11 @@ article h2 {
   background-color: var(--destaque-inverso);
   border-radius: 4px;
   transition: background-color 0.8s, transform 0.7s;
+  animation: carregar 1.7s linear normal;
+}
+
+@keyframes carregar {
+  0% { width: 0%;}
 }
 
 #skill-container .progresso:hover {
@@ -430,6 +435,7 @@ footer #socials .contato .email a {
 }
 
 @media screen and (min-width: 768px){
+
   main {
     grid-template-columns: auto 300px 1fr auto;
   }
