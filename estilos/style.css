@@ -457,6 +457,16 @@ footer #socials .contato .email a {
 
 @media screen and (min-width: 768px){
 
+  header h2 .foto {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+  }
+
+  nav#menu ul {
+    margin-right: 70px;
+  }
+
   main {
     grid-template-columns: auto 300px 1fr auto;
   }
