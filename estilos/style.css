@@ -20,7 +20,7 @@ body.escuro {
   --fundo-principal: #222222;
   --texto: #e0e0e0;
   --texto-inverso: #212121;
-  --destaque-header: linear-gradient(90deg, #77230a, #f54f1c);
+  --destaque-header: linear-gradient(90deg,#f54f1c, #77230a);
   --destaque: #cc3c11;
   --destaque-inverso: #a03b1c;
   --fundo-card: #383838;
