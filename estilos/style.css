@@ -460,11 +460,11 @@ footer #socials .contato .email a {
   header h2 .foto {
     display: flex;
     justify-content: space-around;
-    margin-left: 70px;
+    margin-left: 190px;
   }
 
   nav#menu ul {
-    margin-right: 70px;
+    margin-right: 100px;
   }
 
   main {
