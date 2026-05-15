@@ -61,7 +61,7 @@ header h2 .foto {
 nav#menu ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 5px;
   margin-top: 7px;
 }
 
@@ -77,7 +77,7 @@ nav#menu ul li a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600;
-  padding: 10px 15px;
+  padding: 10px 12px;
   border-radius: 5px;
   transition: all 0.5s;
 }
@@ -96,7 +96,7 @@ main {
 
 main hr {
   color: var(--destaque);
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 section#ficha {
@@ -104,6 +104,7 @@ section#ficha {
   padding: 20px;
   border-radius: 10px;
   grid-column: 2;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -117,7 +118,7 @@ section#ficha img.foto {
   outline: 4px solid var(--destaque);
   display: block;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   transition: transform 0.7s;
 }
 
@@ -129,6 +130,7 @@ section#ficha h1 {
   color: var(--destaque);
   margin: 20px 0;
   font-size: 1.6em;
+
 }
 
 div#social {
@@ -137,7 +139,7 @@ div#social {
   align-items: center;
   font-size: 1.5em;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 div#social a {
