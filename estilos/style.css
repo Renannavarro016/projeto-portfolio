@@ -522,16 +522,16 @@ footer #socials .contato .email a {
   }
 
   header h2 span {
-    font-size: 17.7px;
+    font-size: 14px;
     position: relative;
     top: 7px;
     display: flex;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: -10px;
   }
 
   nav#menu ul {
-    margin-right: -12px;
+    margin-right: 5px;
   }
   
 }
