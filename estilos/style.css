@@ -48,15 +48,34 @@ header {
   z-index: 999;
 }
 
-header h2 .foto {
-  width: 40px;
-  height: 40px;
+header h2 span {
+  font-size: 20px;
+  position: relative;
+  top: 7px;
   display: flex;
   justify-content: center;
-  margin-left: 12px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border: 1px solid var(--destaque-inverso);
+  margin-left: 95px;
+}
+
+#typing{
+  color: var(--texto-inverso);
+  border-right: 2px solid var(--texto-inverso);
+  padding-right: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: piscar .7s infinite;
+  transition: color .8s;
+}
+
+#typing:hover {
+  color: var(--destaque-inverso);
+  border-right: 2px solid var(--destaque-inverso);
+}
+
+@keyframes piscar{
+    50%{
+        border-color: transparent;
+    }
 }
 
 nav#menu ul {
@@ -212,8 +231,8 @@ article h2 {
   top: 30px;
   left: 0;
   right: 0;
-  width: 75%;
-  height: 75%;
+  width: 85%;
+  height: 85%;
   border-radius: 10px;
 }
 
@@ -495,13 +514,29 @@ footer #socials .contato .email a {
   font-weight: 500;
 }
 
-@media screen and (min-width: 768px){
-
-  header h2 .foto {
+@media screen and (max-width: 768px) {
+  header {
     display: flex;
-    justify-content: space-around;
-    margin-left: 190px;
+    justify-content: space-between;
+    text-align: center;
   }
+
+  header h2 span {
+    font-size: 17.7px;
+    position: relative;
+    top: 7px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  nav#menu ul {
+    margin-right: -12px;
+  }
+  
+}
+
+@media screen and (min-width: 768px){
 
   nav#menu ul {
     margin-right: 100px;
@@ -527,7 +562,7 @@ footer #socials .contato .email a {
   }
 
   .video-container {
-    width: 85%;
+    width: 80%;
   } 
 
   #skill-container {

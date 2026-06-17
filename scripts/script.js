@@ -38,3 +38,57 @@ navLinks.forEach(link => {
     }
   });
 });
+
+
+// Para a digitação com efeito
+const textos = [
+    "Renan Navarro",
+    "Front-End Developer",
+    "UI Designer",
+    "Web Developer"
+];
+
+let contadorTexto = 0;
+let contadorLetra = 0;
+
+const typing = document.getElementById("typing");
+
+function escrever(){
+
+    if(contadorLetra < textos[contadorTexto].length){
+
+        typing.innerHTML += textos[contadorTexto].charAt(contadorLetra);
+
+        contadorLetra++;
+
+        setTimeout(escrever, 170);
+
+    } else {
+
+        setTimeout(apagar, 1500);
+    }
+}
+
+function apagar(){
+
+    if(contadorLetra > 0){
+
+        typing.innerHTML = textos[contadorTexto].substring(0, contadorLetra - 1);
+
+        contadorLetra--;
+
+        setTimeout(apagar, 50);
+
+    } else {
+
+        contadorTexto++;
+
+        if(contadorTexto >= textos.length){
+            contadorTexto = 0;
+        }
+
+        setTimeout(escrever, 300);
+    }
+}
+
+escrever();
