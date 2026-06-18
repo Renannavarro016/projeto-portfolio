@@ -243,11 +243,9 @@ article h2 {
 }
 
 .video-container p {
-  position: absolute;
   display: flex;
   justify-content: flex-start;
-  left: 59px;
-  top: 280px;
+  padding-left: 46px;
   font-size: .7em;
   color: var(--destaque);
   cursor: pointer;
