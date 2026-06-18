@@ -220,7 +220,7 @@ article h2 {
 .video-container p {
   display: block;
   margin: auto;
-  padding-top: 6px;
+  padding-top: 20px;
   justify-content: center;
   text-align: center;
   font-size: .7em;
@@ -239,7 +239,7 @@ article h2 {
   display: block;
   margin: auto;
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 0;
   right: 0;
   width: 80%;
@@ -564,12 +564,16 @@ footer #socials .contato .email a {
   }
 
   .video-container p  {
-    padding-top: 6px;
+    padding-top: 20px;
   }
+
+  .video-container {
+    width: 100%;
+  } 
   
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 778px){
 
   nav#menu ul {
     margin-right: 100px;
@@ -595,7 +599,7 @@ footer #socials .contato .email a {
   }
 
   .video-container {
-    width: 80%;
+    width: 85%;
   } 
 
   #skill-container {
