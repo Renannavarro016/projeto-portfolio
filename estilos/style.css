@@ -224,7 +224,7 @@ article h2 {
   aspect-ratio: 16/9;
 }
 
-.video-container iframe {
+.video-container video {
   display: block;
   margin: auto;
   position: absolute;
