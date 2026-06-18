@@ -217,6 +217,17 @@ article h2 {
   margin-bottom: 30px;
 }
 
+.video-container p {
+  display: block;
+  margin: auto;
+  padding-top: 6px;
+  justify-content: center;
+  text-align: center;
+  font-size: .7em;
+  color: var(--destaque);
+  cursor: pointer;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -240,15 +251,6 @@ article h2 {
 .video-container video:hover {
   cursor: pointer;
   transition: .5s;
-}
-
-.video-container p {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 46px;
-  font-size: .7em;
-  color: var(--destaque);
-  cursor: pointer;
 }
 
 #skill-container {
@@ -559,6 +561,10 @@ footer #socials .contato .email a {
   nav#menu ul li a {
     font-size: 12.5px;
     padding: 10px;
+  }
+
+  .video-container p  {
+    padding-top: 6px;
   }
   
 }
