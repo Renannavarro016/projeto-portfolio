@@ -92,3 +92,29 @@ function apagar(){
 }
 
 escrever();
+
+
+// Função para o video rodar e os controles aparecerem quando passar o mouse
+const video = document.getElementById('meuVideo');
+let tempoEntrada;
+let tempoSaida;
+
+// Quando o mouse ENTRA no vídeo
+video.addEventListener('mouseenter', () => {
+  clearTimeout(tempoSaida); // Cancela o sumiço se o mouse voltou rápido
+  
+  tempoEntrada = setTimeout(() => {
+    video.setAttribute('controls', 'true');
+  }, 500); // 500 milissegundos = meio segundo de delay
+});
+
+// Quando o mouse SAI do vídeo
+video.addEventListener('mouseleave', () => {
+  clearTimeout(tempoEntrada); // Cancela a aparição se o mouse saiu rápido
+  
+  tempoSaida = setTimeout(() => {
+    video.removeAttribute('controls');
+  }, 300); // 300 milissegundos de delay para sumir
+});
+
+
