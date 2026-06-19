@@ -246,6 +246,7 @@ article h2 {
   height: 80%;
   border-radius: 10px;
   transition: .5s;
+  box-shadow: 2px 3px 3px 3px #0077ff13;
 }
 
 .video-container video:hover {
@@ -569,6 +570,7 @@ footer #socials .contato .email a {
 
   .video-container {
     width: 100%;
+    margin-bottom: 40px;
   } 
   
 }
