@@ -86,12 +86,14 @@ function apagar(){
 
     } else {
 
+      // Para caso dar errado ele escreve as letras por letra 
         contadorTexto++;
 
         if(contadorTexto >= textos.length){
             contadorTexto = 0;
         }
 
+        // Tempo para escrever a mensagem
         setTimeout(escrever, 300);
     }
 }
