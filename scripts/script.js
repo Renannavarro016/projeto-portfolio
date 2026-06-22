@@ -123,5 +123,3 @@ video.addEventListener('mouseleave', () => {
     video.removeAttribute('controls');
   }, 300); // 300 milissegundos de delay para sumir
 });
-
-
