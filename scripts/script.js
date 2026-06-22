@@ -57,14 +57,17 @@ function escrever(){
 
     if(contadorLetra < textos[contadorTexto].length){
 
+        // Escrevera o texto  
         typing.innerHTML += textos[contadorTexto].charAt(contadorLetra);
 
         contadorLetra++;
 
+        // Tempo para escrever
         setTimeout(escrever, 170);
 
     } else {
 
+      // Tempo para apagar
         setTimeout(apagar, 1500);
     }
 }
@@ -73,10 +76,12 @@ function apagar(){
 
     if(contadorLetra > 0){
 
+      //  Apagara as letras uma a uma
         typing.innerHTML = textos[contadorTexto].substring(0, contadorLetra - 1);
 
         contadorLetra--;
 
+        // Tempo de resposta para apagar 
         setTimeout(apagar, 50);
 
     } else {
