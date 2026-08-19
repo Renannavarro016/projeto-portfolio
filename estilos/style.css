@@ -143,11 +143,13 @@ section#ficha img.foto {
   display: block;
   margin: auto;
   margin-bottom: 30px;
-  transition: transform 0.7s;
+  transition: transform 0.7s, border 0.6s, outline 0.5s;
 }
 
 section#ficha img.foto:hover {
   transform: translateY(-3px);
+  border: 4px solid rgba(80, 79, 79, 0.274);
+  outline: 2px solid rgba(rgb(14, 69, 121));
 }
 
 section#ficha h1 {
